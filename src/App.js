@@ -98,7 +98,7 @@ function App() {
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
 
                 <Typography variant="h4" component="h1" gutterBottom>
-                    Cancer Prediction Model
+                    Lung Cancer Prediction
                 </Typography>
                 <Typography variant="h6" component="h6" gutterBottom>
                     Bioinformatician: Sajad Falsafi Zadeh

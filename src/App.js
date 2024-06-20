@@ -36,7 +36,7 @@ function App() {
     const validateForm = () => {
         for (const [key, value] of Object.entries(formData)) {
             if (!value) {
-                return `${key.replace(/_/g, ' ').toLowerCase().replace(/^\w/, c => c.toUpperCase())} is required`;
+                return `Fill out ${key.replace(/_/g, ' ').toLowerCase().replace(/^\w/, c => c.toUpperCase())} field`;
             }
         }
         return null;
@@ -96,9 +96,13 @@ function App() {
     return (
         <Container maxWidth="lg">
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
+
                 <Typography variant="h4" component="h1" gutterBottom>
                     Cancer Prediction Model
                 </Typography>
+                <Typography variant="h6" component="h6" gutterBottom>
+                    Bioinformatician: Sajad Falsafi Zadeh
+                </Typography>                
                 <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={4}>
@@ -172,7 +176,7 @@ function App() {
                     </DialogActions>
                 </Dialog>
                 <Dialog open={errorOpen} onClose={handleErrorClose}>
-                    <DialogTitle>Error</DialogTitle>
+                    <DialogTitle>Enter data</DialogTitle>
                     <DialogContent>
                         <Typography variant="h6">
                             {errorMessage}

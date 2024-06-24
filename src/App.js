@@ -101,7 +101,7 @@ function App() {
                     Lung Cancer Prediction
                 </Typography>
                 <Typography variant="h6" component="h6" gutterBottom>
-                    Bioinformatician: Sajad Falsafi Zadeh
+                    ----{'>'} Sajad Falsafi
                 </Typography>                
                 <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
